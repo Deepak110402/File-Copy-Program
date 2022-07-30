@@ -1,0 +1,16 @@
+﻿<Window x:Class="FileCopyProgram.ResultBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ResultBox" Height="180" Width="260" MaxHeight="180" MinHeight="180" MinWidth="260" MaxWidth="260" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Center" Height="25" Margin="0,42,0,0" VerticalAlignment="Top" Width="212"/>
+        <Label Content="Copying..." HorizontalAlignment="Left" Margin="18,16,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Percentage" IsReadOnly="True" HorizontalAlignment="Left" Margin="187,21,0,0" TextWrapping="Wrap" TextAlignment="Right" Text="0%" VerticalAlignment="Top" Width="44" BorderThickness="0"/>
+        <Label Content="File Name: " HorizontalAlignment="Left" Margin="24,81,0,0" VerticalAlignment="Top" Width="69" FontSize="10"/>
+        <Label Content="Elasped Time: " HorizontalAlignment="Left" Margin="24,104,0,0" VerticalAlignment="Top" Width="69" FontSize="10"/>
+        <Label Content="Remaining Time: " HorizontalAlignment="Left" Margin="24,129,0,0" VerticalAlignment="Top" Width="84" FontSize="10" RenderTransformOrigin="0.554,0.687"/>
+        <TextBox x:Name="FileName" HorizontalAlignment="Left" IsReadOnly="True" Margin="108,86,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="128" BorderThickness="0" Height="13" FontSize="10"/>
+        <TextBox x:Name="TimeElasped" HorizontalAlignment="Left" IsReadOnly="True" Margin="108,109,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="128" BorderThickness="0" FontSize="10"/>
+        <TextBox x:Name="TimeRemaining" HorizontalAlignment="Left" IsReadOnly="True" Margin="108,134,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="128" BorderThickness="0" FontSize="10"/>
+    </Grid>
+</Window>
